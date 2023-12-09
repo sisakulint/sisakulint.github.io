@@ -36,10 +36,10 @@ languages:
                 - name: Tags
                   url: tags/
                   weight: 10
-                - name: WiKi
-                  url: https://github.com/adityatelange/hugo-PaperMod/wiki/
-                - name: Discord
-                  url: https://discord.gg/ahpmTvhVmp
+                - name: User Document
+                  url: https://ultra-supara.notion.site/User-Documents-c18505b443254ee5a3e5e3751b810a33?pvs=4
+                - name: Developer Document
+                  url: https://ultra-supara.notion.site/Developer-Documents-d3f28d427cf9456dbe3c0f063a7d3baf?pvs=4
 
     ja:
         languageName: ":ja:"
@@ -64,20 +64,20 @@ languages:
                   url: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#profile-mode
         menu:
             main:
-                - name: Archive
-                  url: archives/
+                - name: Philosophy
+                  url: philosophy/
                   weight: 5
-                - name: FRTags
-                  url: frtags
+                - name: Poster
+                  url: poster/
                   weight: 10
-                - name: FRCategories
-                  url: frcategories
+                - name: Detail
+                  url: detail/
                   weight: 10
-                - name: FRSeries
-                  url: frseries
+                - name: User Document
+                  url: https://ultra-supara.notion.site/User-Documents-c18505b443254ee5a3e5e3751b810a33?pvs=4
                   weight: 10
-                - name: NullLink
-                  url: "#"
+                - name: Developer Document
+                  url: https://ultra-supara.notion.site/Developer-Documents-d3f28d427cf9456dbe3c0f063a7d3baf?pvs=4
 
 outputs:
     home:
@@ -132,7 +132,7 @@ params:
     socialIcons:
         - name: github
           url: "https://github.com/sisakulint"
-        - name: KoFi
+        - name: Twitter
           url: "https://ko-fi.com/adityatelange"
         - name: Rss
           url: "index.xml"
