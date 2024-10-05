@@ -1,0 +1,12 @@
+baseURL = 'https://sisakulint.github.io'
+languageCode = 'en-us'
+title = 'Sisakulint Document'
+publishDir = './public'
+enableGitInfo = true
+
+[param]
+BookRepo = 'https://sisakulint.github.io'
+
+[module]
+[[module.imports]]
+path = 'github.com/alex-shpak/hugo-book'
