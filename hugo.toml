@@ -1,6 +1,6 @@
 baseURL = 'https://sisakulint.github.io'
 languageCode = 'en-us'
-title = 'Sisakulint Document'
+title = 'sisakulint Document'
 publishDir = './public'
 enableGitInfo = true
 
