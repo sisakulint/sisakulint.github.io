@@ -48,6 +48,8 @@ jobs:
       - run: echo hello
 ```
 
+results
+
 ```bash
 $ sisakulint -ignore expressions -debug
 
