@@ -67,4 +67,6 @@ $ sisakulint -ignore expressions -debug
        14 👈|      contents: write-all
 ```
 
-I was able to get the following error.
+I was able to get the following error.Available values for whole permissions are "write-all", "read-all" or "none".
+
+[Permissions for the `GITHUB_TOKEN`](https://docs.github.com/en/actions/security-guides/automatic-token-authentication#permissions-for-the-github_token)
