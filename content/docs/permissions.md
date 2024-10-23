@@ -71,4 +71,8 @@ $ sisakulint -ignore expressions -debug
 
 I was able to get the following error.Available values for whole permissions are "write-all", "read-all" or "none".
 
-[Permissions for the `GITHUB_TOKEN`](https://docs.github.com/en/actions/security-guides/automatic-token-authentication#permissions-for-the-github_token)
+{{< popup_link href=https://docs.github.com/en/actions/security-guides/automatic-token-authentication#permissions-for-the-github_token >}}
+Permissions for the <code>GITHUB_TOKEN</code>
+{{< /popup_link >}}
+
+{{< load_link >}}
