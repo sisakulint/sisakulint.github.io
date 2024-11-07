@@ -65,7 +65,8 @@ script/commitsha.yaml:13:9: the action ref in 'uses' for step 'Run GolangCI-Lint
 ### Feature background
 As the risk of supply chain attacks increases, ensuring the integrity of dependencies has become even more crucial. Since SHA values are immutable, they are more reliable than tags or branches, allowing you to securely lock in a specific version of an action. By using SHA-based versioning, you can minimize the risk of unintended updates or tampering, helping to protect against supply chain attacks.
 
-In the past, one drawback of SHA-based versioning was the inability to automatically receive critical bug fixes or security updates for actions. To address this issue, tools like Dependabot’s update feature and products like Renovate have been developed, enabling automated updates even when a version is specified by SHA. This approach allows you to maintain the security of SHA-based versioning while still receiving updates to the latest secure versions, thus balancing the need for both strong protection against supply chain attacks and the convenience of automated updates.
+In the past, one drawback of SHA-based versioning was the inability to automatically receive critical bug fixes or security updates for actions. To address this, tools like Renovate have emerged, and Dependabot has been enhanced to enable automated updates even when a version is pinned by SHA. This approach preserves the security of SHA-based versioning while ensuring updates to the latest secure versions, effectively balancing robust protection against supply chain attacks with the convenience of automated updates.
+
 
 See also documents below.
 
