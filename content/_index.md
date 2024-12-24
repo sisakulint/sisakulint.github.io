@@ -13,8 +13,8 @@ repo : [sisakulint](https://github.com/ultra-supara/sisakulint)
 
 ## Achievements
 
-- It has been adopted by [CODEBLUE 2024](https://codeblue.jp/) , one of the largest security conferences in Japan. ref :  [cybertamago](https://cybertamago.org/tools.php#sisakulint)
-- It has been adopted by [Black Hat Asia 2025 Arsenal](https://www.blackhat.com/asia-25/arsenal-overview.html) , The World's Premier Technical Cybersecurity Conference in Singapore. 
+- It has been adopted by [CODEBLUE 2024](https://codeblue.jp/) , The Largest Security Conferences in Japan. ref :  [cybertamago](https://cybertamago.org/tools.php#sisakulint)
+- It has been adopted by [Black Hat Asia 2025 Arsenal](https://www.blackhat.com/asia-25/arsenal-overview.html) , The World's Premier Technical Security Conference in Singapore. ref : 
 
 ## Conference Logo
 
@@ -33,7 +33,7 @@ It is easy to introduce because it can be installed from brew.
 It also implements an autofix function for errors related to security features as a lint.
 It supports the SARIF format, which is the output format for static analysis. This allows [reviewdog](https://github.com/reviewdog/reviewdog?tab=readme-ov-file#sarif-format) to provide a rich UI for error triage on GitHub.
 
-## Main Tool features:**
+## Main Tool features:
 - **id collision detection**
  	- Environment variable names collision
  	- docs : https://sisakulint.github.io/docs/idrule/
@@ -68,9 +68,11 @@ $ brew install sisakulint
 
 ## install from release page for Linux user
 
+visit release page of this repository and download for yours.
+https://github.com/ultra-supara/sisakulint/releases
+
 ```bash
-# visit release page of this repository and download for yours.
-$ cd < sisakulintがあるところ >
+$ cd < dir >
 $ mv ./sisakulint /usr/local/bin/sisakulint
 ```
 
