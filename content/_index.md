@@ -13,7 +13,12 @@ repo : [sisakulint](https://github.com/ultra-supara/sisakulint)
 
 ## Achievements
 
-It has been adopted by [CODEBLUE 2024](https://codeblue.jp/) , one of the largest security conferences in Japan. ref :  [cybertamago](https://cybertamago.org/tools.php#sisakulint)
+- It has been adopted by [CODEBLUE 2024](https://codeblue.jp/) , one of the largest security conferences in Japan. ref :  [cybertamago](https://cybertamago.org/tools.php#sisakulint)
+- It has been adopted by [Black Hat Asia 2025 Arsenal](https://www.blackhat.com/asia-25/arsenal-overview.html) , The World's Premier Technical Cybersecurity Conference in Singapore. 
+
+## Conference Logo
+
+![image](https://github.com/user-attachments/assets/d84f127b-8b42-4885-ad52-8eca3e4e077c)
 
 ## what is this?
 In recent years, attacks targeting the Web Application Platform have been increasing rapidly.
