@@ -7,18 +7,26 @@ draft = false
 # sisakulint Document
 
 Before moving on, please consider giving us a GitHub star ⭐️. Thank you!
-repo : [sisakulint](https://github.com/ultra-supara/sisakulint)
 
-<img src="https://github.com/ultra-supara/homebrew-sisakulint/assets/67861004/e9801cbb-fbe1-4822-a5cd-d1daac33e90f" alt="sisakulint logo" width="160" height="160"/> 
+{{< popup_link href=https://github.com/ultra-supara/sisakulint >}}
+Permissions for the <code>GITHUB_TOKEN</code>
+{{< /popup_link >}}
+
+{{< load_link >}}
+
+<img src="https://github.com/ultra-supara/homebrew-sisakulint/assets/67861004/e9801cbb-fbe1-4822-a5cd-d1daac33e90f" alt="sisakulint logo" width="160" height="160"/>
 
 ## Achievements
 
-- It has been adopted by [CODEBLUE 2024](https://codeblue.jp/) , The Largest Security Conferences in Japan. ref :  [cybertamago](https://cybertamago.org/tools.php#sisakulint)
-- It has been adopted by [Black Hat Asia 2025 Arsenal](https://www.blackhat.com/asia-25/arsenal-overview.html) , The World's Premier Technical Security Conference in Singapore. ref : 
+- It has been adopted by [CODEBLUE 2024](https://codeblue.jp/) , The Largest Security Conferences in Japan. 
+       - ref :  [cybertamago](https://cybertamago.org/tools.php#sisakulint)
+
+- It has been adopted by [Black Hat Asia 2025](https://www.blackhat.com/asia-25/arsenal-overview.html) , The World's Premier Technical Security Conference in Singapore. 
+       - ref :  [Arsenal](https://www.blackhat.com/asia-25/arsenal/schedule/#sisakulint---ci-friendly-static-linter-with-sast-semantic-analysis-for-github-actions-43229)
 
 ## Conference Logo
 
-![image](https://github.com/user-attachments/assets/d84f127b-8b42-4885-ad52-8eca3e4e077c)
+<img src="https://github.com/user-attachments/assets/d84f127b-8b42-4885-ad52-8eca3e4e077c" alt="Black Hat Asia logo" width="160" height="160"/>
 
 ## what is this?
 In recent years, attacks targeting the Web Application Platform have been increasing rapidly.
