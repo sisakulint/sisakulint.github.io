@@ -71,4 +71,9 @@ a.yaml:14:14: one ${{ }} expression should be included in "runner label at \"run
 
 This rule helps enforce proper usage of reusable workflows and GitHub Actions syntax, reducing potential configuration errors and ensuring workflows are set up according to best practices.
 
-For more information, refer to the [GitHub documentation on reusing workflows](https://docs.github.com/en/actions/sharing-automations/reusing-workflows).
+For more information, please refer to below.
+
+{{< popup_link href=https://docs.github.com/en/actions/sharing-automations/reusing-workflows >}}
+reusing-workflows
+{{< /popup_link >}}
+{{< load_link >}}

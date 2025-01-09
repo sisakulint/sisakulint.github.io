@@ -1,6 +1,6 @@
 +++
 title = 'sisakulint Document'
-date = 2024-10-06T02:14:29+09:00
+date = 2025-1-09T02:14:29+09:00
 draft = false
 +++
 
@@ -9,24 +9,21 @@ draft = false
 Before moving on, please consider giving us a GitHub star ⭐️. Thank you!
 
 {{< popup_link href=https://github.com/ultra-supara/sisakulint >}}
-Permissions for the <code>GITHUB_TOKEN</code>
+sisakulint
 {{< /popup_link >}}
-
 {{< load_link >}}
 
-<img src="https://github.com/ultra-supara/homebrew-sisakulint/assets/67861004/e9801cbb-fbe1-4822-a5cd-d1daac33e90f" alt="sisakulint logo" width="160" height="160"/>
+![sisakulint logo](https://github.com/ultra-supara/homebrew-sisakulint/assets/67861004/e9801cbb-fbe1-4822-a5cd-d1daac33e90f)
 
 ## Achievements
 
-- It has been adopted by [CODEBLUE 2024](https://codeblue.jp/) , The Largest Security Conferences in Japan. 
-       - ref :  [cybertamago](https://cybertamago.org/tools.php#sisakulint)
+- It has been adopted by [CODEBLUE 2024](https://codeblue.jp/) , The Largest Security Conferences in Japan. ref :  [cybertamago](https://cybertamago.org/tools.php#sisakulint)
 
-- It has been adopted by [Black Hat Asia 2025](https://www.blackhat.com/asia-25/arsenal-overview.html) , The World's Premier Technical Security Conference in Singapore. 
-       - ref :  [Arsenal](https://www.blackhat.com/asia-25/arsenal/schedule/#sisakulint---ci-friendly-static-linter-with-sast-semantic-analysis-for-github-actions-43229)
+- It has been adopted by [Black Hat Asia 2025](https://www.blackhat.com/asia-25/arsenal-overview.html) , The World's Premier Technical Security Conference in Singapore.ref :  [Arsenal](https://www.blackhat.com/asia-25/arsenal/schedule/#sisakulint---ci-friendly-static-linter-with-sast-semantic-analysis-for-github-actions-43229)
 
 ## Conference Logo
 
-<img src="https://github.com/user-attachments/assets/d84f127b-8b42-4885-ad52-8eca3e4e077c" alt="Black Hat Asia logo" width="160" height="160"/>
+![BlackHat logo](https://github.com/user-attachments/assets/d84f127b-8b42-4885-ad52-8eca3e4e077c)
 
 ## what is this?
 In recent years, attacks targeting the Web Application Platform have been increasing rapidly.
@@ -327,9 +324,6 @@ paste yours `settings.json`
 ```
 
 ## Links
-
-![スクリーンショット 2024-08-28 14 20 32](https://github.com/user-attachments/assets/61afb4eb-944a-4d35-9a17-575704282516)
-
 
 - slides
 - [poster](https://sechack365.nict.go.jp/achievement/2023/pdf/14C.pdf)
