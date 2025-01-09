@@ -1,6 +1,6 @@
 +++
 title = 'sisakulint Document'
-date = 2025-1-09T02:14:29+09:00
+date = 2024-10-06T02:14:29+09:00
 draft = false
 +++
 
