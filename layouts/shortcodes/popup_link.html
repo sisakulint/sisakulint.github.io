@@ -1,8 +1,0 @@
-{{- $link := .Get "href" -}}
-{{- $alt_card := .Get "alt_card" -}}
-{{- $alt_title := .Get "alt_title" -}}
-<div class="popup-link">
-    <a href="{{ $link }}" data-alt-card="{{ $alt_card }}" data-alt-title="{{ $alt_title }}">
-        {{ .Inner }}
-    </a>
-</div>
