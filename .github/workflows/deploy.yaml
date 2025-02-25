@@ -31,7 +31,12 @@ jobs:
           hugo-version: "latest"
           extended: true
       - name: Build Hugo
-        run: hugo --minify
+        run: |
+          python -m venv .venv
+          source .venv/bin/activate
+          pip install -r requirements.txt
+          python ogp_proxy.py &
+          hugo --minify
       - name: Upload artifact
         uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3.0.1
         with:

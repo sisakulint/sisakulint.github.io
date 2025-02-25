@@ -58,4 +58,4 @@ def get_ogp():
     return jsonify(ogp_data)
 
 if __name__ == '__main__':
-    app.run(port=3000)
+    app.run(host="127.0.0.1",port=3000)
