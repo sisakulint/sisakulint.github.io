@@ -2,38 +2,53 @@
     'use strict';
     const links = document.getElementsByClassName('popup-link');
 
-    async function fetchAndParseOGP(url) {
-        const response = await fetch(url);
-        const htmlString = await response.text();
+    async function fetchAndParseOGP(url,alt_title,alt_card) {
+        // URLをパース
+        const parsedURL = new URL(url);
+         try {
+            const response = await fetch(url); // 可能であればHTMLを取得してOGPを抽出
+            const htmlString = await response.text();
 
-        // HTMLをDOMにパース
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(htmlString, 'text/html');
+            // HTMLをDOMにパース
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(htmlString, 'text/html');
 
-        // OGPメタタグを抽出
-        const ogTags = {};
-        const metaTags = doc.querySelectorAll('meta[property^="og:"]');
-        
-        metaTags.forEach(tag => {
-            const property = tag.getAttribute('property');
-            const content = tag.getAttribute('content');
-            if (property && content) {
-                ogTags[property] = content;
+            // OGPメタタグを抽出
+            const ogTags = {};
+            const metaTags = doc.querySelectorAll('meta[property^="og:"]');
+
+            metaTags.forEach(tag => {
+                const property = tag.getAttribute('property');
+                const content = tag.getAttribute('content');
+                if (property && content) {
+                    ogTags[property] = content;
+                }
+            });
+
+            const favicon = doc.querySelector('link[rel="icon"]');
+
+            if (favicon) {
+                const parsedURL = new URL(favicon.getAttribute('href'), url);
+                ogTags['favicon'] = parsedURL.href;
             }
-        });
+            else {
+                const parsedURL = new URL(url);
+                ogTags['favicon'] = `${parsedURL.origin}/favicon.ico`;
+            }
 
-        const favicon = doc.querySelector('link[rel="icon"]');
-
-        if (favicon) {
-            const parsedURL = new URL(favicon.getAttribute('href'), url);
-            ogTags['favicon'] = parsedURL.href;
-        }
-        else {
+            return ogTags;
+        } catch (error) {
+            console.error(error);
+            // おそらくCORSエラーなどでHTMLを取得できなかった場合は、googleのやつを使う
+            // imageはalt_cardが指定されている場合はそちらを使いなければfaviconを使う
             const parsedURL = new URL(url);
-            ogTags['favicon'] = `${parsedURL.origin}/favicon.ico`;
+            const faviconRoots = "https://www.google.com/s2/favicons?domain=" + parsedURL.hostname;
+            return {
+                'og:title': alt_title? alt_title : parsedURL.hostname,
+                'og:image': alt_card ? alt_card : faviconRoots,
+                'favicon': faviconRoots,
+            };
         }
-
-        return ogTags;
     }
 
     async function sanitizeOGP(ogp) {
@@ -78,7 +93,9 @@
     for (let i = 0; i < links.length; i++) {
         try {
             const a = links[i].getElementsByTagName('a')[0];
-            fetchAndParseOGP(a.href).then(async(ogp) => {
+            const title = a.attributes.getNamedItem('data-alt-title');
+            const attr = a.attributes.getNamedItem('data-alt-card');
+            fetchAndParseOGP(a.href,title?.value,attr?.value).then(async(ogp) => {
                 console.log(ogp);
                 const block =await createBlock(ogp,a.href,a.innerHTML);
                 links[i].removeChild(a);
