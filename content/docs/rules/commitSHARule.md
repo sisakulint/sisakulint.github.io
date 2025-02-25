@@ -70,17 +70,14 @@ In the past, one drawback of SHA-based versioning was the inability to automatic
 
 See also documents below.
 
-{{< popup_link href="https://docs.github.com/en/actions/learn-github-actions/finding-and-customizing-actions#using-shas" >}}
-Using SHAs
-{{< /popup_link >}}
-{{< popup_link href="https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions#using-third-party-actions" >}}
-Using third party actions
-{{< /popup_link >}}
+{{< popup_link2 href="https://docs.github.com/en/actions/learn-github-actions/finding-and-customizing-actions#using-shas" >}}
+
+{{< popup_link2 href="https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions#using-third-party-actions" >}}
 
 
-{{< popup_link href=https://www.chainguard.dev/unchained/what-the-fork-imposter-commits-in-github-actions-and-ci-cd >}}
-{{< /popup_link >}}
-{{< load_link >}}
+
+{{< popup_link2 href=https://www.chainguard.dev/unchained/what-the-fork-imposter-commits-in-github-actions-and-ci-cd >}}
+
 
 
 

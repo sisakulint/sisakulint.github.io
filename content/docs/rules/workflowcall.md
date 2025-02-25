@@ -73,7 +73,4 @@ This rule helps enforce proper usage of reusable workflows and GitHub Actions sy
 
 For more information, please refer to below.
 
-{{< popup_link href=https://docs.github.com/en/actions/sharing-automations/reusing-workflows >}}
-reusing-workflows
-{{< /popup_link >}}
-{{< load_link >}}
+{{< popup_link2 href=https://docs.github.com/en/actions/sharing-automations/reusing-workflows >}}
