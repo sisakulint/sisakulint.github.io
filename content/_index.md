@@ -10,8 +10,6 @@ Before moving on, please consider giving us a GitHub star ⭐️. Thank you!
 
 {{< popup_link2 href=https://github.com/ultra-supara/sisakulint >}}
 
-{{< load_link >}}
-
 {{< figure src="https://github.com/ultra-supara/homebrew-sisakulint/assets/67861004/e9801cbb-fbe1-4822-a5cd-d1daac33e90f" alt="sisakulint logo" width="300px" >}}
 
 
