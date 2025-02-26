@@ -1,5 +1,5 @@
 ---
-title: "Sample"
+title: "Rules"
 weight: 1
 # bookFlatSection: false
 # bookToc: true
@@ -8,5 +8,3 @@ weight: 1
 # bookComments: false
 # bookSearchExclude: false
 ---
-
-# Hello World!

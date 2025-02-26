@@ -8,6 +8,8 @@ on:
     branches: [main]
   # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
+  pull_request:
+    branches: [main]
 
 # Allow this job to clone the repo and create a page deployment
 permissions:
@@ -31,11 +33,17 @@ jobs:
           hugo-version: "latest"
           extended: true
       - name: Build Hugo
-        run: hugo --minify
+        run: |
+          python -m venv .venv
+          source .venv/bin/activate
+          pip install -r requirements.txt
+          python ogp_proxy.py &
+          hugo --minify
       - name: Upload artifact
         uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3.0.1
         with:
           path: "./public"
       - name: Deploy to GitHub Pages
         id: deployment
+        if: ${{ github.ref == 'refs/heads/main' }}
         uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4.0.5
