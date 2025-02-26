@@ -8,6 +8,8 @@ on:
     branches: [main]
   # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
+  pull_request:
+    branches: [main]
 
 # Allow this job to clone the repo and create a page deployment
 permissions:
@@ -43,4 +45,5 @@ jobs:
           path: "./public"
       - name: Deploy to GitHub Pages
         id: deployment
+        if: ${{ github.ref == 'refs/heads/main' }}
         uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4.0.5
