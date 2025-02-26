@@ -2,17 +2,18 @@
 {{ $ogpUrl := printf "http://localhost:3000/ogp?url=%s" $url }}
 {{ $ogp := (resources.GetRemote $ogpUrl) | unmarshal  }}
 
-<a href="{{ $url }}" style="display: flex; align-items: center; text-decoration: none; color: inherit;"> 
-    <img src="{{ $ogp.og_image }}" alt="{{ $ogp.og_image_alt }}" style="max-width: 100px; margin-right: 15px;">
-    <div style="flex-grow: 1; overflow: hidden;">
-        <h4 style="margin: 0; color: inherit;">{{ $ogp.og_title }}</h4>
-        <p style="margin: 0; color: inherit;font-size: 10px">{{ $ogp.og_description }}</p>
-        <div style="display: flex; align-items: center; margin-top: 5px; overflow: hidden;">
-            <img src="{{ $ogp.favicon }}" alt="favicon" style="width: 16px; height: 16px; margin-right: 8px;">
-            <p style="margin: 0; color: inherit; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; max-width: calc(100% - 24px);">
-                {{ $ogp.hostname }}
-            </p>
+<div style="border: 1px solid #ccc; padding: 10px; width: 100%; height: auto;">
+    <a href="{{ $url }}" style="display: flex; align-items: center; text-decoration: none; color: inherit;"> 
+        <img src="{{ $ogp.og_image }}" alt="{{ $ogp.og_image_alt }}" style="max-width: 100px; margin-right: 15px;">
+        <div style="flex-grow: 1; overflow: hidden;">
+            <h4 style="margin: 0; color: inherit;">{{ $ogp.og_title }}</h4>
+            <p style="margin: 0; color: inherit;font-size: 10px">{{ $ogp.og_description }}</p>
+            <div style="display: flex; align-items: center; margin-top: 5px; overflow: hidden;">
+                <img src="{{ $ogp.favicon }}" alt="favicon" style="width: 16px; height: 16px; margin-right: 8px;">
+                <p style="margin: 0; color: inherit; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; max-width: calc(100% - 24px);">
+                    {{ $ogp.hostname }}
+                </p>
+            </div>
         </div>
-    </div>
-</a>
-
+    </a>
+</div>
