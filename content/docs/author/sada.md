@@ -1,6 +1,6 @@
 ## Self Introduction
 
-<img width="1103" alt="Image" src="https://github.com/user-attachments/assets/90198900-eaa7-470e-bbe9-55c8e2341f13" />
+![image](https://github.com/user-attachments/assets/90198900-eaa7-470e-bbe9-55c8e2341f13)
 
 ## Social Media
 
