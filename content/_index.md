@@ -76,11 +76,13 @@ $ mv ./sisakulint /usr/local/bin/sisakulint
 
 ## Structure
 
-![image](https://github.com/user-attachments/assets/26c4ece8-06b5-4bcd-af98-8afc504ef736)
+![image](https://github.com/user-attachments/assets/4c6fa378-5878-48af-b95f-8b987b3cf7ef)
 
-This is a project for processing the YAML language.
+It automatically searches for YAML files in the .github/workflows directory, and the parser traverses the token column of the AST to check many rules. We've made it easy to triage by outputting clear results using a custom error formatter we made and [reviewdog](https://github.com/reviewdog/reviewdog) on the GitHub UI in SARIF format.
 
-It automatically searches for YAML files in the .github/workflows directory, and the parser traverses the token column of the AST to check many rules. We've made it easy to triage by outputting clear results using a custom error formatter we made and review dog on the GitHub UI in SARIF format.
+![image](https://github.com/user-attachments/assets/89604d2b-57f0-4ea2-9073-02ea9e422001)
+
+[example url](https://github.com/ultra-supara/sisakulint/pull/138)
 
 ## Usage test
 Create a file called test.yaml in the `.github/workflows` directory or go to your repository where your workflows file is located.

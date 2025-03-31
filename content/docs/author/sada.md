@@ -1,6 +1,6 @@
 ## Self Introduction
 
-![image](https://github.com/user-attachments/assets/90198900-eaa7-470e-bbe9-55c8e2341f13)
+![image](https://github.com/user-attachments/assets/18d364c2-fb5f-44f7-942e-a09968c1e5a3)
 
 ## Social Media
 
