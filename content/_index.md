@@ -12,17 +12,11 @@ Before moving on, please consider giving us a GitHub star ⭐️. Thank you!
 
 {{< figure src="https://github.com/ultra-supara/homebrew-sisakulint/assets/67861004/e9801cbb-fbe1-4822-a5cd-d1daac33e90f" alt="sisakulint logo" width="300px" >}}
 
-
-
 ## Achievements
 
 - It has been adopted by [CODEBLUE 2024](https://codeblue.jp/) , The Largest Security Conferences in Japan. ref :  [cybertamago](https://cybertamago.org/tools.php#sisakulint)
 
 - It has been adopted by [Black Hat Asia 2025](https://www.blackhat.com/asia-25/arsenal-overview.html) , The World's Premier Technical Security Conference in Singapore.ref :  [Arsenal](https://www.blackhat.com/asia-25/arsenal/schedule/#sisakulint---ci-friendly-static-linter-with-sast-semantic-analysis-for-github-actions-43229)
-
-## Conference Logo
-
-![BlackHat logo](https://github.com/user-attachments/assets/d84f127b-8b42-4885-ad52-8eca3e4e077c)
 
 ## what is this?
 In recent years, attacks targeting the Web Application Platform have been increasing rapidly.
@@ -311,6 +305,9 @@ you will likely receive the following result...
 - Error  `timeout-minutes is not set for job test; see https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idtimeout-minutes for more details.`
 
 - Scenario: Similar to the first issue, if the `test` job runs indefinitely, it can block the workflow and lead to resource exhaustion. This can delay the entire CI/CD process, affecting deployment timelines and potentially leading to missed deadlines.
+
+## Autofix 
+- :todo:
 
 
 ## JSON schema for GitHub Actions syntax
